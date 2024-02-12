@@ -111,11 +111,11 @@ const timedQuotes = [
     { time: 20, quote: "Juliet to your Romeo" },
     { time: 24, quote: "How I heard you say" },
     { time: 27, quote: "I would never fall in love again" },
-    { time: 30, quote: "until I found her" },
-    { time: 33, quote: "I said, 'I would never fall unless it's you I fall into'" },
-    { time: 40, quote: "I was lost within the darkness," },
-    { time: 43, quote: "but then I found her" },
-    { time: 46, quote: "I found you" }
+    { time: 31, quote: "until I found her" },
+    { time: 34, quote: "I said, 'I would never fall unless it's you I fall into'" },
+    { time: 41, quote: "I was lost within the darkness," },
+    { time: 44, quote: "but then I found her" },
+    { time: 47, quote: "I found you" }
 ];
 
 let currentQuoteIndex = 0;
