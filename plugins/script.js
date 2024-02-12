@@ -177,4 +177,4 @@ function createRain() {
 }
 
 // Set an initial call to createRain to start the effect when the page loads
-setInterval(createRain, 300);
+setInterval(createRain, 160);
