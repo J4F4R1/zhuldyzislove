@@ -137,7 +137,43 @@ function displayNextQuote() {
 }
 
 function createRain() {
-    // Implementation of the createRain function
+    const heartCatcher = document.querySelector('.click-catcher');
+
+    const heart = document.createElement("div");
+    heart.classList.add("heart");
+
+    const size = Math.floor(Math.random() * (100 - 40 + 1)) + 40;
+
+    const blur = Math.floor(Math.random() * 7) + 1;
+    heart.style.width = size + "px";
+    heart.style.height = size + "px";
+    heart.style.filter = `blur(${blur}px)`;
+    const opacity = Math.random() * 0.4 + 0.6;
+    heart.style.opacity = opacity;
+
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.animationDuration = Math.random() * 2 + 3 + "s";
+
+    const heartImage = document.createElement("img");
+    heartImage.src = "https://cdn.discordapp.com/attachments/1035231349180747826/1190672860776255598/heart_6.PNG";
+    heartImage.alt = "Heart";
+    heartImage.style.width = "100%";
+    heart.appendChild(heartImage);
+
+    heartCatcher.appendChild(heart);
+
+    heart.addEventListener('click', () => {
+        const popSound = document.getElementById('popSound');
+        popSound.play();
+
+        setTimeout(() => {
+            heart.remove();
+        }, 0);
+    });
+
+    setTimeout(() => {
+        heart.remove();
+    }, 5000);
 }
 
 // Set an initial call to createRain to start the effect when the page loads
